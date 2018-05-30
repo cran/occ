@@ -1,1 +1,8 @@
-export(occ, plot.occ, print.occ, print.summary.occ, summary.occ)
+export(occ)
+
+S3method(plot, occ)
+S3method(print, occ)
+S3method(summary, occ)
+
+importFrom("graphics", "barplot", "frame", "legend", "lines", "par", "title")
+importFrom("stats", "lm", "nlm", "sd")
