@@ -1,18 +1,23 @@
-citHeader("To cite package 'occ' in publications use:")
-
-citEntry(
-	entry = "Article",
-	author = personList(
-		as.person("Joaquim Radua"),
-		as.person("Santiago Bullich"),
-		as.person("Natalia Lopez"),
-		as.person("Ana M Catafau")
+c(
+	bibentry(
+	    bibtype = "Manual",
+	    title = "{occ}: Estimation of PET Neuroreceptor Occupancies",
+	    author = person("Joaquim", "Radua"),
+	    year = sub("-.*", "", meta$Date),
+	    note = sprintf("R package version %s", meta$Version)
 	),
-	title = "Restricted maximum likelihood estimation of PET neuroreceptor occupancy in the absence of a reference region",
-	journal = "Medical Physics",
-	year = 2011,
-	volume = 38,
-	pages = 2558,
-	textVersion = "Radua J, Bullich S, Lopez N and Catafau AM. Restricted maximum likelihood estimation of PET neuroreceptor occupancy in the absence of a reference region. Medical Physics 2011;38:2558"
-)
-
+	bibentry(
+	    bibtype = "Article",
+	    title = "Restricted maximum likelihood estimation of PET neuroreceptor occupancy in the absence of a reference region",
+	    author = c(
+			person("Joaquim", "Radua"),
+			person("Santiago", "Bullich"),
+			person("Natalia", "Lopez"),
+			person("Ana M", "Catafau")
+		),
+	    journal = "Medical Physics",
+	    year = 2011,
+            volume = 38,
+            pages = c(2558, 2562)
+	)
+);

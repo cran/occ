@@ -2,9 +2,9 @@
 \name{occ.example}
 \alias{occ.example}
 \keyword{occ.example}
-\description{Total volumes of distribution (VT) from a simulated PET study including a baseline scan, as well as two other scans after administration of a drug.}
+\description{The data represent the total volumes of distribution (VT) from a simulated PET study, including a baseline scan and two other scans after administering a drug.}
 \usage{occ.example}
-\format{A matrix of total volumes of distribution (VT) with 5 rows (ROIs) and 3 columns (scans).}
+\format{A matrix of total volumes of distribution (VT) with five rows (ROIs) and three columns (scans).}
 \examples{
 data(occ.example)
 occ.example
